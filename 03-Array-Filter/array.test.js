@@ -1,7 +1,7 @@
 const { getEvenNumbers } = require("./array");
 
 describe("----Array-Filter----", () => {
-  describe("Get Even Function:", () => {
+  describe("getEvenNumbers Function:", () => {
     let array;
 
     beforeEach(() => {
