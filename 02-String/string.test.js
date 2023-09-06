@@ -1,7 +1,7 @@
 const { reverseString } = require("./string");
 
 describe("----Reverse-String----", () => {
-  describe("String function:", () => {
+  describe("reverseString function:", () => {
     test("should return reversed string", () => {
       expect(reverseString("hello")).toBe("olleh");
       expect(reverseString("USA")).toBe("ASU");
