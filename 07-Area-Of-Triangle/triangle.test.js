@@ -1,7 +1,7 @@
 const { calcArea } = require("./triangle");
 
 describe("----Triangle-Area----", () => {
-  describe("Calculate area function: ", () => {
+  describe("calcArea function: ", () => {
     test("should be defined", () => {
       expect(calcArea).toBeDefined();
     });
