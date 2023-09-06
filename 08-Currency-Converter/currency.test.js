@@ -1,7 +1,7 @@
 const { convertCurrency } = require("./currency");
 
 describe("----Currency-Converter----", () => {
-  describe("Currency converter function: ", () => {
+  describe("convertCurrency function: ", () => {
     test("should be defined", () => {
       expect(convertCurrency).toBeDefined();
     });
