@@ -7,7 +7,7 @@ describe("----To-Do----", () => {
     expect(markTaskAsDone).toBeDefined();
   });
 
-  describe("Add task function: ", () => {
+  describe("addTask function: ", () => {
     let array = tasks.slice();
 
     test("should add an object of task to the array", () => {
@@ -26,7 +26,7 @@ describe("----To-Do----", () => {
     });
   });
 
-  describe("Delete task function: ", () => {
+  describe("deleteTask function: ", () => {
     test("should remove an object of task from the array", () => {
       const resultArray = [{ task: "Go to cinema", marked: true }];
 
@@ -44,7 +44,7 @@ describe("----To-Do----", () => {
     });
   });
 
-  describe("Mark task function: ", () => {
+  describe("markTaskAsDone function: ", () => {
     test("should change marked status of array element to true", () => {
       let res = [
         { task: "task", marked: true },
