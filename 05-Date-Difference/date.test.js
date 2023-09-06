@@ -1,7 +1,7 @@
 const { getDaysDifference } = require("./date");
 
 describe("----Date-Diffrence----", () => {
-  describe("Date diffrence function: ", () => {
+  describe("getDaysDifference function: ", () => {
     test("should be defined", () => {
       expect(getDaysDifference).toBeDefined();
     });
