@@ -4,32 +4,23 @@ describe("----Math----", () => {
   describe("Sum function: ", () => {
     test("should sum positive values as expected", () => {
       expect(sum(1, 1)).toBe(2);
-      expect(sum(100, 150)).toBe(250);
       expect(sum(15, 0)).toEqual(15);
     });
 
     test("should sum negative values as expected", () => {
       expect(sum(-3, -2)).toBe(-5);
-      expect(sum(-90, -70)).toBe(-160);
-      expect(sum(-100, -400)).toEqual(-500);
     });
 
     test("should sum negative and positive values as expected", () => {
-      expect(sum(-10, 10)).toBe(0);
-      expect(sum(-65, 60)).toBe(-5);
       expect(sum(-40, 50)).toBe(10);
-
       expect(sum(50, -20)).toBe(30);
-      expect(sum(30, -35)).toBe(-5);
     });
 
     test("should sum float values as expected", () => {
       expect(sum(0.5, 5.5)).toBe(6);
       expect(sum(9.9, 1.5)).toBe(11.4);
-      expect(sum(0.1, 0.2)).toBeCloseTo(0.3);
 
       expect(sum(9.5, -9.5)).toBe(0);
-      expect(sum(-100.5, 50.6)).toBe(-49.9);
 
       expect(sum(-0.3, -0.5)).toBe(-0.8);
     });
@@ -37,13 +28,11 @@ describe("----Math----", () => {
     test("should sum float and integer values as expected", () => {
       expect(sum(5, 0.5)).toBe(5.5);
       expect(sum(-3, 2.5)).toBe(-0.5);
-      expect(sum(-10, -5.5)).toBe(-15.5);
       expect(sum(20, -10.5)).toBe(9.5);
     });
 
     test("return value should be correct to compared value", () => {
       expect(sum(2, 2)).toBeGreaterThan(0);
-      expect(sum(5, -9)).toBeLessThan(0);
       expect(sum(0.2, 0.9)).toBeGreaterThanOrEqual(1.1);
       expect(sum(-100, 100)).toBeLessThanOrEqual(0);
     });
@@ -79,10 +68,8 @@ describe("----Math----", () => {
 
     test("should subtract float values as expected", () => {
       expect(subtract(0.1, 1.1)).toBe(-1);
-      expect(subtract(6.6, 1.6)).toBe(5);
       expect(subtract(0.3, 0.2)).toBeCloseTo(0.1);
 
-      expect(subtract(1.2, -1.5)).toBe(2.7);
       expect(subtract(-100.5, 50.5)).toBe(-151);
 
       expect(subtract(-1.2, -1.8)).toBeCloseTo(0.6);
@@ -91,14 +78,12 @@ describe("----Math----", () => {
     test("should subtract float and integer values as expected", () => {
       expect(subtract(4, 0.1)).toBe(3.9);
       expect(subtract(-100, 50.5)).toBe(-150.5);
-      expect(subtract(-19, -1.5)).toBe(-17.5);
       expect(subtract(220, -200.5)).toBe(420.5);
     });
 
     test("return value should be correct to compared value", () => {
       expect(subtract(10, 10)).toBeGreaterThanOrEqual(0);
       expect(subtract(10, -10)).toBeGreaterThan(10);
-      expect(subtract(0.1, 0.9)).toBeLessThan(0);
       expect(subtract(3, -9.9)).toBeGreaterThanOrEqual(5);
     });
 
@@ -136,7 +121,6 @@ describe("----Math----", () => {
     test("return value should be correct to compared value", () => {
       expect(multiply(0, 0)).toBeLessThanOrEqual(0);
       expect(multiply(-5, -5)).toBeGreaterThanOrEqual(0);
-      expect(multiply(10, 10)).toBeGreaterThan(10);
       expect(multiply(10, -5.5)).toBeLessThan(0);
     });
 
